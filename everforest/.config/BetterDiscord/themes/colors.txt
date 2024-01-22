@@ -1,0 +1,25 @@
+  --gruvbox-dark1: #282828;	--solar-brblack: #002b36
+  --gruvbox-dark2: #3c3836;	--solar-black: #073642
+  --gruvbox-dark3: #504945;	--solar-brgreen: #586e75
+  --gruvbox-dark4: #665c54;	--solar-bryellow: #657b83
+  --gruvbox-light1: #fbf1c7;	--solar-white: #eee8d5
+  --gruvbox-light2: #ebdbb2;	--solar-brcyan: #93a1a1
+  --gruvbox-light3: #d5c4a1;	--solar-blue: #839496
+  --gruvbox-darker-blue: #458588;	--solar-brblue: #839496
+  --gruvbox-darker-aqua: #689d6a;	--solar-brmagenta: #6c71c4
+  --gruvbox-aqua: #8ec07c;	--solar-cyan
+  --gruvbox-blue: #83a598;	--solar-blue
+  --gruvbox-red: #fb4934;	--solar-red
+  --gruvbox-orange: #fe8019;	--solar-brred
+  --gruvbox-yellow: #d79921;	--solar-yellow
+  --gruvbox-green: #b8bb26;	--solar-green
+  --gruvbox-pink: #d3869b;	--solar-magenta
+  --gruvbox-light-1: #fbf1c7;	--solar-white: #eee8d5
+  --gruvbox-light0: #ebdbb2;	--solar-brcyan: #93a1a1
+  --gruvbox-light4: #d5c4a1;	--solar-brcyan: #93a1a1
+  --gruvbox-light5: #bdae93;	--solar-brblue: #839496
+  --gruvbox-grey1: #a89984;	--solar-brgreen: #586e75
+  --gruvbox-black1: #282828;	--solar-brblack: #002b36
+  --gruvbox-black2: #32302f;	--solar-black: #073642
+  --gruvbox-black3: #1d2021;	--solar-brblack: #002b36
+  --gruvbox-dark5: #32302f;	--solar-black: #073642

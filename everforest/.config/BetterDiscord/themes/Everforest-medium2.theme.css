@@ -1,0 +1,352 @@
+//META{  "name":"Everforest Dark 2",  "description":"Everforest medium theme for BetterDiscord",  "author":"Michel","version":"0.1"}*//
+
+:root {
+  --everforest-dark1: #2d353b;
+  --everforest-dark2: #343f44;
+  --everforest-dark3: #3d484d;
+  --everforest-dark4: #475258;
+  --everforest-light1: #9da9a0;
+  --everforest-light2: #859289;
+  --everforest-light3: #7a8478;
+  --everforest-darker-blue: #3a515d;
+  --everforest-darker-aqua: #425047;
+  --everforest-aqua: #83c092;
+  --everforest-blue: #7fbbb3;
+  --everforest-red: #e67e80;
+  --everforest-orange: #e69875;
+  --everforest-yellow: #dbbc7f;
+  --everforest-green: #a7c080;
+  --everforest-pink: #d699b6;
+
+  --everforest-light-1: #d3c6aa;
+  --everforest-light0: #859289;
+  --everforest-light4: #7a8478;
+  --everforest-light5: #d3c6aa;
+  --everforest-grey1: #9da9a0;
+  --everforest-black1: #2d353b;
+  --everforest-black2: #232a2e;
+  --everforest-black3: #56635f;
+  --everforest-dark5: #232a2e;
+  --everforest-primary: var(--everforest-yellow);
+
+  --button-white: var(--everforest-light3);
+  --button-white-text: var(--everforest-black1);
+  --button-white-hover: var(--everforest-light1);
+  --button-white-active: var(--everforest-light0);
+  --button-white-outlined: rgba(133, 146, 137, 0.1);
+
+  --category-fade-background: rgba(219, 188, 127, 0.8);
+  --category-fade-background-hover: rgba(219, 188, 127, 0.95);
+
+  --highlight: rgba(131, 192, 146, 0.4);
+
+  --status-online: var(--everforest-green);
+  --status-offline: var(--everforest-dark5);
+  --status-idle: var(--everforest-orange);
+  --status-dnd: var(--everforest-red);
+  --status-stream: var(--everforest-pink);
+}
+
+.theme-dark {
+  --header-primary: var(--everforest-light-1);
+  --header-secondary: #859289;
+  --text-normal: var(--everforest-light-1);
+  --text-muted: var(--everforest-grey1);
+  --text-link: hsl(0, calc(var(--saturation-factor, 1) * 75%), 60%); /* #4c91e6 */
+  --text-link-low-saturation: hsl(213, calc(var(--saturation-factor, 1) * 32%), 52%); /* --everforest-blue */
+  --text-positive: hsl(92, calc(var(--saturation-factor, 1) * 28%), 65%); /* --everforest-green */
+  --text-warning: hsl(14, calc(var(--saturation-factor, 1) * 51%), 63%); /* --everforest-orange */
+  --text-danger: hsl(354, calc(var(--saturation-factor, 1) * 42%), 56%); /* --everforest-red */
+  --text-brand: hsl(60, calc(var(--saturation-factor, 1) * 25%), 65%); /* --everforest-primary */
+  --text-primary-background: var(--everforest-grey1);
+
+  --interactive-normal: var(--everforest-light2);
+  --interactive-hover: var(--everforest-light0);
+  --interactive-active: var(--everforest-light-1);
+  --interactive-muted: var(--everforest-dark4);
+
+  --text-mention: var(--everforest-primary);
+  --background-mention: rgba(219, 188, 127, 0.8);
+  --text-mention-hover: var(--text-primary-background);
+  --background-mention-hover: var(--everforest-primary);
+  --message-ephemeral: var(--everforest-red);
+  --background-ephemeral: rgba(157, 169, 160, 0.4);
+  --background-ephemeral-hover: rgba(157, 169, 160, 0.2);
+  --mentioned-timestamp: var(--everforest-grey1);
+
+  --reaction-count: var(--everforest-grey1);
+  --reaction-hover: var(--everforest-light0);
+  --reaction-me: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.3);
+
+  --background-primary: var(--everforest-dark2);
+  --background-secondary: var(--everforest-dark1);
+  --background-secondary-alt: var(--everforest-black1);
+  --background-tertiary: var(--everforest-black2);
+  --background-accent: var(--everforest-dark1);
+  --background-floating: var(--background-secondary);
+  --background-floating-gradient: linear-gradient(90deg, rgba(157, 169, 160, 0.3), var(--background-floating) 80%);
+  --background-nested-floating: #e67e80;
+  --background-mobile-primary: #3a515d;
+  --background-mobile-secondary: #425047;
+  --background-modifier-hover: rgba(81, 64, 69, 0.3);
+  --background-modifier-hover-gradient: linear-gradient(90deg, rgba(0, 48, 59, 0), var(--background-secondary-alt) 50%);
+  --background-modifier-active: rgba(133, 146, 137, 0.3);
+  --background-modifier-selected: rgba(157, 169, 160, 0.5);
+  --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
+  --background-slider: var(--everforest-black2);
+  --background-channel-header: var(--background-secondary);
+  --background-channel-header-gradient: linear-gradient(90deg, rgba(81, 64, 69, 0.3) 0, var(--background-secondary));
+
+  --info-positive-text: var(--text-normal);
+  --info-warning-text: var(--text-normal);
+  --info-danger-text: var(--text-normal);
+  --info-help-background: hsla(213, calc(var(--saturation-factor, 1) * 32%), 52%, 0.1);
+  --info-help-foreground: hsl(213, calc(var(--saturation-factor, 1) * 32%), 52%);
+  --info-help-text: var(--text-normal);
+  --status-warning-text: #000;
+
+  --keybind-background: var(--everforest-dark5);
+  --keybind-text: var(--text-normal);
+  --keybind-shadow: var(--everforest-black2);
+
+  --scrollbar-thin-thumb: var(--everforest-black3);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: var(--everforest-black3);
+  --scrollbar-auto-track: var(--everforest-dark1);
+  --scrollbar-auto-scrollbar-color-thumb: var(--everforest-black3);
+  --scrollbar-auto-scrollbar-color-track: var(--everforest-black1);
+
+  --logo-primary: #859289;
+  --control-brand-foreground: var(--text-brand);
+  --control-brand-foreground-new: var(--text-brand);
+
+  --background-mentioned: hsla(60, calc(var(--saturation-factor, 1) * 25%), 65%, 0.15);
+  --background-mentioned-hover: hsla(60, calc(var(--saturation-factor, 1) * 25%), 65%, 0.205);
+  --background-message-hover:rgba(157, 169, 160, 0.1);
+  --channels-default: var(--everforest-light-1);
+  --guild-header-text-shadow: 0 1px 1px var(--everforest-dark1);
+  --channeltextarea-background: var(--everforest-dark4);
+  --activity-card-background: var(--background-secondary-alt);
+  --textbox-markdown-syntax: var(--everforest-grey1);
+
+  --input-background: rgba(0, 0, 0, 0.2);
+  --input-placeholder-text: var(--text-muted);
+
+  --deprecated-card-bg: var(--everforest-dark1);
+  --deprecated-card-editable-bg: rgba(35, 42, 46, 0.3);
+  --deprecated-store-bg: #3a515d;
+  --deprecated-quickswitcher-input-background: var(--everforest-black2);
+  --deprecated-quickswitcher-input-placeholder: var(--text-muted);
+  --deprecated-text-input-bg: rgba(0, 200, 0, 0.2);
+  --deprecated-text-input-border: rgba(0, 200, 0, 0.3);
+  --deprecated-text-input-border-hover: #040405;
+  --deprecated-text-input-border-disabled: var(--everforest-black2);
+  --deprecated-text-input-prefix: #d3c6aa;
+}
+
+.theme-light {
+  --header-primary: var(--everforest-dark4);
+  --header-secondary: #4f5660;
+  --text-normal: var(--everforest-dark2);
+  --text-muted: var(--everforest-grey1);
+  --text-link: hsl(213, calc(var(--saturation-factor, 1) * 75%), 60%); /* #4c91e6 */
+  --text-link-low-saturation: hsl(213, calc(var(--saturation-factor, 1) * 32%), 52%); /* --everforest-blue */
+  --text-positive: hsl(92, calc(var(--saturation-factor, 1) * 28%), 65%); /* --everforest-green */
+  --text-warning: hsl(14, calc(var(--saturation-factor, 1) * 51%), 63%); /* --everforest-orange */
+  --text-danger: hsl(354, calc(var(--saturation-factor, 1) * 42%), 56%); /* --everforest-red */
+  --text-brand: hsl(179, calc(var(--saturation-factor, 1) * 25%), 65%); /* --everforest-primary */
+  --text-primary-background: #fbf1c7;
+
+  --interactive-normal: var(--text-normal);
+  --interactive-hover: var(--everforest-primary);
+  --interactive-active: var(--everforest-dark5);
+  --interactive-muted: var(--text-muted);
+
+  --text-mention: var(--everforest-primary);
+  --background-mention: rgba(219, 188, 127, 0.5);
+  --text-mention-hover: var(--text-primary-background);
+  --background-mention-hover: var(--everforest-primary);
+  --message-ephemeral: var(--everforest-blue);
+  --background-ephemeral: rgba(94, 129, 172, 0.1);
+  --background-ephemeral-hover: rgba(94, 129, 172, 0.2);
+  --mentioned-timestamp: var(--everforest-grey1);
+
+  --reaction-count: var(--everforest-grey1);
+  --reaction-hover: var(--everforest-dark5);
+  --reaction-me: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.3);
+
+  --background-primary: var(--everforest-light1);
+  --background-secondary: var(--everforest-light2);
+  --background-secondary-alt: var(--everforest-light3);
+  --background-tertiary: var(--everforest-light3);
+  --background-accent: var(--everforest-light-1);
+  --background-floating: var(--background-secondary);
+  --background-floating-gradient: linear-gradient(90deg, rgba(219, 188, 127, 0.2), var(--background-floating) 80%);
+  --background-nested-floating: #fbf1c7;
+  --background-mobile-primary: #859289;
+  --background-mobile-secondary: #fbf1c7;
+  --background-modifier-hover: var(--everforest-light3);
+  --background-modifier-hover-gradient: linear-gradient(
+    90deg,
+    rgba(236, 239, 244, 0),
+    var(--background-secondary-alt) 50%
+  );
+  --background-modifier-active: rgba(155, 162, 172, 0.16);
+  --background-modifier-selected: rgba(155, 162, 172, 0.24);
+  --background-modifier-accent: rgba(96, 109, 133, 0.08);
+  --background-slider: var(--everforest-light3);
+  --background-channel-header: var(--background-secondary);
+  --background-channel-header-gradient: linear-gradient(90deg, rgba(229, 233, 240, 0) 0, var(--background-secondary));
+
+  --info-positive-text: var(--text-normal);
+  --info-warning-text: var(--text-normal);
+  --info-danger-text: var(--text-normal);
+  --info-help-background: hsla(213, calc(var(--saturation-factor, 1) * 32%), 52%, 0.1);
+  --info-help-foreground: hsl(213, calc(var(--saturation-factor, 1) * 32%), 52%);
+  --info-help-text: var(--text-normal);
+  --status-warning-text: #fbf1c7;
+
+  --keybind-background: var(--everforest-light4);
+  --keybind-text: var(--text-normal);
+  --keybind-shadow: var(--everforest-light-1);
+
+  --scrollbar-thin-thumb: var(--everforest-dark5);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: var(--everforest-light2);
+  --scrollbar-auto-track: var(--everforest-light-1);
+  --scrollbar-auto-scrollbar-color-thumb: var(--everforest-light-1);
+  --scrollbar-auto-scrollbar-color-track: var(--everforest-light1);
+
+  --logo-primary: var(--text-brand);
+  --control-brand-foreground: var(--text-brand);
+  --control-brand-foreground-new: var(--text-brand);
+
+  --background-mentioned: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.35);
+  --background-mentioned-hover: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.45);
+  --background-message-hover: rgba(155, 162, 172, 0.15);
+  --channels-default: var(--text-normal);
+  --guild-header-text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.4);
+  --channeltextarea-background: var(--background-secondary-alt);
+  --activity-card-background: var(--background-secondary-alt);
+  --textbox-markdown-syntax: #928374;
+
+  --input-background: rgba(255, 255, 255, 0.2);
+  --input-placeholder-text: var(--text-muted);
+
+  --deprecated-card-bg: var(--everforest-light1);
+  --deprecated-card-editable-bg: rgba(236, 239, 244, 0.3);
+  --deprecated-store-bg: #859289;
+  --deprecated-quickswitcher-input-background: var(--everforest-light4);
+  --deprecated-quickswitcher-input-placeholder: var(--text-muted);
+  --deprecated-text-input-bg: rgba(255, 255, 255, 0.2);
+  --deprecated-text-input-border: rgba(255, 255, 255, 0.3);
+  --deprecated-text-input-border-hover: #fbf1c7;
+  --deprecated-text-input-border-disabled:  var(--everforest-light0);
+  --deprecated-text-input-prefix: #fbf1c7;
+}
+
+.theme-dark,
+.theme-light {
+  --input-placeholder-text: var(--text-muted);
+
+  --info-positive-background: hsla(92, calc(var(--saturation-factor, 1) * 28%), 65%, 0.1);
+  --info-positive-foreground: hsl(92, calc(var(--saturation-factor, 1) * 28%), 65%);
+  --info-warning-background: hsla(14, calc(var(--saturation-factor, 1) * 51%), 63%, 0.1);
+  --info-warning-foreground: hsl(14, calc(var(--saturation-factor, 1) * 51%), 63%);
+  --info-danger-background: hsla(354, calc(var(--saturation-factor, 1) * 42%), 56%, 0.1);
+  --info-danger-foreground: hsl(354, calc(var(--saturation-factor, 1) * 42%), 56%);
+
+  --status-positive-background: hsl(92, calc(var(--saturation-factor, 1) * 28%), 65%);
+  --status-positive-text: var(--everforest-light5);
+  --status-positive: hsl(92, calc(var(--saturation-factor, 1) * 28%), 65%);
+
+  --status-warning-background: hsl(14, calc(var(--saturation-factor, 1) * 51%), 63%);
+  --status-warning: hsl(14, calc(var(--saturation-factor, 1) * 51%), 63%);
+
+  --status-danger-background: hsl(354, calc(var(--saturation-factor, 1) * 42%), 56%);
+  --status-danger-text: var(--everforest-light5);
+  --status-danger: hsl(354, calc(var(--saturation-factor, 1) * 42%), 56%);
+
+  --button-secondary-background: var(--everforest-dark5);
+  --button-secondary-text: var(--everforest-light5);
+  --button-secondary-background-hover: var(--everforest-dark4);
+  --button-secondary-background-active: var(--everforest-dark3);
+
+  --button-danger-background: var(--status-danger);
+  --button-danger-text: var(--everforest-light5);
+  --button-danger-background-hover: #ac5861;
+  --button-danger-background-active: #975056;
+  --button-danger-background-disabled: #ab5860;
+  --button-outline-danger-text: var(--text-normal);
+  --button-outline-danger-border: var(--status-danger);
+  --button-outline-danger-background-hover: var(--status-danger);
+  --button-outline-danger-border-hover: var(--status-danger);
+  --button-outline-danger-text-hover: var(--button-danger-text);
+  --button-outline-danger-background-active: var(--button-danger-background-active);
+  --button-outline-danger-border-active: var(--button-danger-background-active);
+  --button-outline-danger-text-active: var(--button-danger-text);
+
+  --button-positive-background: var(--status-positive);
+  --button-positive-text: var(--everforest-dark1);
+  --button-positive-background-hover: #b8bb26;
+  --button-positive-background-active: #98971a;
+  --button-positive-background-disabled: #98971a;
+  --button-outline-positive-text: var(--text-normal);
+  --button-outline-positive-border: var(--status-positive);
+  --button-outline-positive-background-hover: var(--status-positive);
+  --button-outline-positive-border-hover: var(--status-positive);
+  --button-outline-positive-text-hover: var(--button-positive-text);
+  --button-outline-positive-background-active: var(--button-positive-background-active);
+  --button-outline-positive-border-active: var(--button-positive-background-active);
+  --button-outline-positive-text-active: var(--button-positive-text);
+
+  --button-brand-background: var(--everforest-primary);
+  --button-brand-text: var(--everforest-black1);
+  --button-brand-background-hover: #e67e80;
+  --button-brand-background-active: #e67e80;
+  --button-outline-brand-text: var(--text-normal);
+  --button-outline-brand-border: var(--text-primary);
+  --button-outline-brand-background-hover: var(--everforest-primary);
+  --button-outline-brand-border-hover: var(--everforest-primary);
+  --button-outline-brand-text-hover: var(--button-brand-text);
+  --button-outline-brand-background-active: var(--button-brand-background-active);
+  --button-outline-brand-border-active: var(--button-brand-background-active);
+  --button-outline-brand-text-active: var(--button-brand-text);
+
+  --search-popout-date-picker-hint-text: var(--text-muted);
+  --search-popout-date-picker-hint-value-text: var(--button-brand-text);
+  --search-popout-date-picker-hint-value-background: var(--button-brand-background);
+  --search-popout-date-picker-hint-value-background-hover: var(--button-brand-background-hover);
+
+  --focus-primary: var(--everforest-primary);
+
+  --background-selection: hsla(213, calc(var(--saturation-factor, 1) * 75%), 60%, 0.2);
+  --icon-admin: var(--text-muted);
+  --icon-management: var(--everforest-yellow);
+}
+
+[data-popout-root],
+html {
+  --brand-experiment: hsl(179, calc(var(--saturation-factor, 1) * 25%), 65%);
+  --brand-experiment-500: hsl(179, calc(var(--saturation-factor, 1) * 25%), 65%);
+
+  --brand-experiment-05a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.05);
+  --brand-experiment-10a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.1);
+  --brand-experiment-15a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.15);
+  --brand-experiment-20a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.2);
+  --brand-experiment-25a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.25);
+  --brand-experiment-30a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.3);
+  --brand-experiment-35a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.35);
+  --brand-experiment-40a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.4);
+  --brand-experiment-45a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.45);
+  --brand-experiment-50a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.5);
+  --brand-experiment-55a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.55);
+  --brand-experiment-60a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.6);
+  --brand-experiment-65a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.65);
+  --brand-experiment-70a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.7);
+  --brand-experiment-75a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.75);
+  --brand-experiment-80a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.8);
+  --brand-experiment-85a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.85);
+  --brand-experiment-90a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.9);
+  --brand-experiment-95a: hsla(179, calc(var(--saturation-factor, 1) * 25%), 65%, 0.95);
+}

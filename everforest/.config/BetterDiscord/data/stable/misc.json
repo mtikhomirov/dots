@@ -1,0 +1,14 @@
+{
+    "version": "1.9.7",
+    "drawerStates": {
+        "settings": {
+            "addons": true,
+            "customcss": true
+        }
+    },
+    "addonlistControls": {
+        "theme": {
+            "view": "grid"
+        }
+    }
+}

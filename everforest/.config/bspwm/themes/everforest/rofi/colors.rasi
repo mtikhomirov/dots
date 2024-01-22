@@ -1,0 +1,9 @@
+*{
+	bg: #2d353b;
+	fg: #d3c6aa;
+	green: #a7c080;
+	aqua: #83c092;
+	orange: #e69875;
+	yellow: #dbbc7f;
+	blue: #7fbbb3;
+}
