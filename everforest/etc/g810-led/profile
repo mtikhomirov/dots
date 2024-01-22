@@ -1,14 +1,14 @@
 # Sample profile by groups keys
 
-g logo ebdbb2
-g indicators ebdbb2
-g multimedia 98971a
-g fkeys d79921
-g modifiers cc241d
-g arrows d79921
-g numeric 689d6a
-g functions ebdbb2
-g keys 458588
-g gkeys ebdbb2
+g logo 7fbbb3
+g indicators 7fbbb3
+g multimedia 83c092
+g fkeys dbbcf7
+g modifiers e67e80
+g arrows dbbcf7
+g numeric 3a515d
+g functions d3c6aa
+g keys 3a515d
+g gkeys d3c6aa
 
 c # Commit changes
