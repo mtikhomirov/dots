@@ -6,4 +6,6 @@
 	orange: #d65e0e;
 	yellow: #d79921;
 	blue: #458588;
+	redlt: #fb4934;
+	bluelt: #83a598;
 }

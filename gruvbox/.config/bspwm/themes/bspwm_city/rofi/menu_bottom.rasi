@@ -52,14 +52,14 @@ listview {
 
 inputbar {
 	children: [prompt, entry];
-	background-color: @green;
+	background-color: @fg;
 	border-radius: 5;
 	margin: 10 0 10 0;
 }
 
 prompt {
 	font: "Symbols Nerd Font 10";
-	background-color: @green;
+	background-color: @fg;
 	text-color: @bg;
 	enabled: true;
 	border-radius: 0;
@@ -70,7 +70,7 @@ prompt {
 entry {
 	background-color: transparent;
 	text-color: @bg;
-	placeholder-color: @fg;
+	placeholder-color: @green;
 	border-radius: 0;
 	placeholder: "Search...";
 	blink: false;
@@ -110,15 +110,15 @@ element.normal.active {
 	text-color: @fg;
 }
 element.selected.normal {
-	background-color: @blue;
+	background-color: @bluelt;
 	text-color: @bg;
 }
 element.selected.urgent {
-	background-color: @blue;
+	background-color: @bluelt;
 	text-color: @bg;
 }
 element.selected.active {
-	background-color: @blue;
+	background-color: @bluelt;
 	text-color: @bg;
 }
 element.alternate.normal {
