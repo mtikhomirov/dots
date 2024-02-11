@@ -1,0 +1,24 @@
+*{
+	bg: #002b36;
+	bgalt: #073642;
+
+	fg: #839496;
+
+	content1: #586e75;
+	content2: #657b83;
+	content3: #839496;
+	content4: #93a1a1;
+	
+
+	white: #eee8d5;
+	brwhite: #fdf6e3;
+
+	yellow: #b58900;
+	brred: #cb4b16;
+	red: #dc322f;
+	magenta: #d33682;
+	brmagenta: #6c71c4;
+	blue: #268bd2;
+	cyan: #2aa198;
+	green: #859900;
+}
